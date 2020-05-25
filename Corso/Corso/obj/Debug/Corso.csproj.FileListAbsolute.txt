@@ -1,0 +1,11 @@
+C:\Users\NilsonFelipe\Desktop\CorsoApp\Corso\Corso\bin\Debug\Corso.exe.config
+C:\Users\NilsonFelipe\Desktop\CorsoApp\Corso\Corso\bin\Debug\Corso.exe
+C:\Users\NilsonFelipe\Desktop\CorsoApp\Corso\Corso\bin\Debug\Corso.pdb
+C:\Users\NilsonFelipe\Desktop\CorsoApp\Corso\Corso\obj\Debug\Corso.csprojAssemblyReference.cache
+C:\Users\NilsonFelipe\Desktop\CorsoApp\Corso\Corso\obj\Debug\Corso.Form1.resources
+C:\Users\NilsonFelipe\Desktop\CorsoApp\Corso\Corso\obj\Debug\Corso.Properties.Resources.resources
+C:\Users\NilsonFelipe\Desktop\CorsoApp\Corso\Corso\obj\Debug\Corso.csproj.GenerateResource.cache
+C:\Users\NilsonFelipe\Desktop\CorsoApp\Corso\Corso\obj\Debug\Corso.csproj.CoreCompileInputs.cache
+C:\Users\NilsonFelipe\Desktop\CorsoApp\Corso\Corso\obj\Debug\Corso.exe
+C:\Users\NilsonFelipe\Desktop\CorsoApp\Corso\Corso\obj\Debug\Corso.pdb
+C:\Users\NilsonFelipe\Desktop\CorsoApp\Corso\Corso\obj\Debug\Corso.FormAvanzato.resources

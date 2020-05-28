@@ -377,6 +377,7 @@
             // 
             // buttonAbilitaPanel
             // 
+            this.buttonAbilitaPanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
             this.buttonAbilitaPanel.Location = new System.Drawing.Point(5, 307);
             this.buttonAbilitaPanel.Name = "buttonAbilitaPanel";
             this.buttonAbilitaPanel.Size = new System.Drawing.Size(103, 39);
@@ -387,6 +388,7 @@
             // 
             // buttonDisabilitaPanel
             // 
+            this.buttonDisabilitaPanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
             this.buttonDisabilitaPanel.Location = new System.Drawing.Point(133, 305);
             this.buttonDisabilitaPanel.Name = "buttonDisabilitaPanel";
             this.buttonDisabilitaPanel.Size = new System.Drawing.Size(117, 40);

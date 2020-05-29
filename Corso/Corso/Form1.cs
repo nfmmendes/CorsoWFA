@@ -126,7 +126,7 @@ namespace Corso
             if (newNumberState == true)
                 textBoxCalc.Text = "";
             newNumberState = false;
-            textBoxCalc.Text = textBoxCalc.Text.Insert(Math.Min(textBoxCalc.Text.Length,textBoxCalc.SelectionStart+1), "0");
+            textBoxCalc.Text = textBoxCalc.Text.Insert(Math.Min(textBoxCalc.Text.Length,textBoxCalc.SelectionStart), "0");
             textBoxCalc.SelectionStart++;
         }
 
@@ -135,7 +135,7 @@ namespace Corso
             if (newNumberState == true)
                 textBoxCalc.Text = "";
             newNumberState = false;
-            textBoxCalc.Text = textBoxCalc.Text.Insert(Math.Min(textBoxCalc.Text.Length, textBoxCalc.SelectionStart + 1), ".");
+            textBoxCalc.Text = textBoxCalc.Text.Insert(Math.Min(textBoxCalc.Text.Length, textBoxCalc.SelectionStart), ".");
             textBoxCalc.SelectionStart++;
         }
 
@@ -146,83 +146,94 @@ namespace Corso
 
         private void buttonOne_Click(object sender, EventArgs e)
         {
+            var previousPosition = textBoxCalc.SelectionStart; 
             if (newNumberState == true)
                 textBoxCalc.Text = "";
             newNumberState = false;
-            textBoxCalc.Text = textBoxCalc.Text.Insert(Math.Min(textBoxCalc.Text.Length, textBoxCalc.SelectionStart + 1), "1");
-            textBoxCalc.SelectionStart++;
+            textBoxCalc.Text = textBoxCalc.Text.Insert(Math.Min(textBoxCalc.Text.Length, textBoxCalc.SelectionStart), "1");
+            textBoxCalc.SelectionStart = Math.Min(textBoxCalc.Text.Length,  previousPosition+1); 
+            
         }
 
         private void buttonTwo_Click(object sender, EventArgs e)
         {
+            var previousPosition = textBoxCalc.SelectionStart;
             if (newNumberState == true)
                 textBoxCalc.Text = "";
             newNumberState = false;
-            textBoxCalc.Text = textBoxCalc.Text.Insert(Math.Min(textBoxCalc.Text.Length, textBoxCalc.SelectionStart + 1), "2");
-            textBoxCalc.SelectionStart++;
+            textBoxCalc.Text = textBoxCalc.Text.Insert(Math.Min(textBoxCalc.Text.Length, textBoxCalc.SelectionStart), "2");
+            textBoxCalc.SelectionStart = Math.Min(textBoxCalc.Text.Length, textBoxCalc.SelectionStart) + 1;
+            textBoxCalc.SelectionStart = Math.Min(textBoxCalc.Text.Length, previousPosition + 1);
         }
 
         private void buttonThree_Click(object sender, EventArgs e)
         {
+            var previousPosition = textBoxCalc.SelectionStart;
             if (newNumberState == true)
                 textBoxCalc.Text = "";
             newNumberState = false;
-            textBoxCalc.Text = textBoxCalc.Text.Insert(Math.Min(textBoxCalc.Text.Length, textBoxCalc.SelectionStart + 1), "3");
-            textBoxCalc.SelectionStart++;
+            textBoxCalc.Text = textBoxCalc.Text.Insert(Math.Min(textBoxCalc.Text.Length, textBoxCalc.SelectionStart), "3");
+            textBoxCalc.SelectionStart = Math.Min(textBoxCalc.Text.Length, previousPosition + 1);
         }
 
         private void buttonFour_Click(object sender, EventArgs e)
         {
+            var previousPosition = textBoxCalc.SelectionStart;
             if (newNumberState == true)
                 textBoxCalc.Text = "";
             newNumberState = false;
-            textBoxCalc.Text = textBoxCalc.Text.Insert(Math.Min(textBoxCalc.Text.Length, textBoxCalc.SelectionStart + 1), "4");
-            textBoxCalc.SelectionStart++;
+            textBoxCalc.Text = textBoxCalc.Text.Insert(Math.Min(textBoxCalc.Text.Length, textBoxCalc.SelectionStart), "4");
+            textBoxCalc.SelectionStart = Math.Min(textBoxCalc.Text.Length, previousPosition + 1);
         }
 
         private void buttonFive_Click(object sender, EventArgs e)
         {
+            var previousPosition = textBoxCalc.SelectionStart;
             if (newNumberState == true)
                 textBoxCalc.Text = "";
             newNumberState = false;
-            textBoxCalc.Text = textBoxCalc.Text.Insert(Math.Min(textBoxCalc.Text.Length, textBoxCalc.SelectionStart + 1), "5");
-            textBoxCalc.SelectionStart++;
+            textBoxCalc.Text = textBoxCalc.Text.Insert(Math.Min(textBoxCalc.Text.Length, textBoxCalc.SelectionStart), "5");
+            textBoxCalc.SelectionStart = Math.Min(textBoxCalc.Text.Length, previousPosition + 1);
         }
 
         private void buttonSix_Click(object sender, EventArgs e)
         {
+            var previousPosition = textBoxCalc.SelectionStart;
             if (newNumberState == true)
                 textBoxCalc.Text = "";
             newNumberState = false;
-            textBoxCalc.Text = textBoxCalc.Text.Insert(Math.Min(textBoxCalc.Text.Length, textBoxCalc.SelectionStart + 1), "6");
-            textBoxCalc.SelectionStart++;
+            textBoxCalc.Text = textBoxCalc.Text.Insert(Math.Min(textBoxCalc.Text.Length, textBoxCalc.SelectionStart), "6");
+            textBoxCalc.SelectionStart = Math.Min(textBoxCalc.Text.Length, previousPosition + 1);
         }
 
         private void buttonSeven_Click(object sender, EventArgs e)
         {
+            var previousPosition = textBoxCalc.SelectionStart;
             if (newNumberState == true)
                 textBoxCalc.Text = "";
             newNumberState = false;
-            textBoxCalc.Text = textBoxCalc.Text.Insert(Math.Min(textBoxCalc.Text.Length, textBoxCalc.SelectionStart + 1), "7");
-            textBoxCalc.SelectionStart++;
+            textBoxCalc.Text = textBoxCalc.Text.Insert(Math.Min(textBoxCalc.Text.Length, textBoxCalc.SelectionStart), "7");
+            textBoxCalc.SelectionStart = Math.Min(textBoxCalc.Text.Length, previousPosition + 1);
         }
 
         private void buttonEight_Click(object sender, EventArgs e)
         {
+            var previousPosition = textBoxCalc.SelectionStart;
             if (newNumberState == true)
                 textBoxCalc.Text = "";
             newNumberState = false;
-            textBoxCalc.Text = textBoxCalc.Text.Insert(Math.Min(textBoxCalc.Text.Length, textBoxCalc.SelectionStart + 1), "8");
-            textBoxCalc.SelectionStart++;
+            textBoxCalc.Text = textBoxCalc.Text.Insert(Math.Min(textBoxCalc.Text.Length, textBoxCalc.SelectionStart), "8");
+            textBoxCalc.SelectionStart = Math.Min(textBoxCalc.Text.Length, previousPosition + 1);
         }
 
         private void buttonNine_Click(object sender, EventArgs e)
         {
+            var previousPosition = textBoxCalc.SelectionStart;
             if (newNumberState == true)
                 textBoxCalc.Text = "";
             newNumberState = false; 
-            textBoxCalc.Text = textBoxCalc.Text.Insert(Math.Min(textBoxCalc.Text.Length, textBoxCalc.SelectionStart + 1), "9");
-            textBoxCalc.SelectionStart++;
+            textBoxCalc.Text = textBoxCalc.Text.Insert(Math.Min(textBoxCalc.Text.Length, textBoxCalc.SelectionStart), "9");
+            textBoxCalc.SelectionStart = Math.Min(textBoxCalc.Text.Length, previousPosition + 1);
         }
 
         private void buttonAvanzato_Click(object sender, EventArgs e)
@@ -251,6 +262,7 @@ namespace Corso
         private void textBoxCalc_TextChanged(object sender, EventArgs e)
         {
             if (!String.IsNullOrEmpty(this.textBoxCalc.Text) && !onlySymbol(this.textBoxCalc.Text)) {
+                newNumberState = false;
                 try
                 {
                     double value = Convert.ToDouble(this.textBoxCalc.Text);
